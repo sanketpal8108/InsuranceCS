@@ -1,0 +1,180 @@
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\appsettings.Development.json
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\appsettings.json
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\InsuranceProject.exe
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\InsuranceProject.deps.json
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\InsuranceProject.runtimeconfig.json
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\InsuranceProject.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\InsuranceProject.pdb
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.csproj.AssemblyReference.cache
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.AssemblyInfoInputs.cache
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.AssemblyInfo.cs
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.csproj.CoreCompileInputs.cache
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.MvcApplicationPartsAssemblyInfo.cs
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.MvcApplicationPartsAssemblyInfo.cache
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets\msbuild.InsuranceProject.Microsoft.AspNetCore.StaticWebAssets.props
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets\msbuild.build.InsuranceProject.props
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.InsuranceProject.props
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.InsuranceProject.props
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets.pack.json
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets.build.json
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets.development.json
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\scopedcss\bundle\InsuranceProject.styles.css
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.csproj.CopyComplete
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\refint\InsuranceProject.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.pdb
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.genruntimeconfig.cache
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\obj\Debug\net6.0\ref\InsuranceProject.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Azure.Core.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Azure.Identity.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Humanizer.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.CodeDom.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Memory.Data.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Text.Json.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\BCrypt.Net-Next.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\MVC\Final Project\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\appsettings.json
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\InsuranceProject.exe
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\InsuranceProject.deps.json
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\InsuranceProject.runtimeconfig.json
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\InsuranceProject.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\InsuranceProject.pdb
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Humanizer.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.csproj.AssemblyReference.cache
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.AssemblyInfoInputs.cache
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.AssemblyInfo.cs
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.csproj.CoreCompileInputs.cache
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets\msbuild.InsuranceProject.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets\msbuild.build.InsuranceProject.props
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.InsuranceProject.props
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.InsuranceProject.props
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\scopedcss\bundle\InsuranceProject.styles.css
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.csproj.CopyComplete
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\refint\InsuranceProject.dll
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.pdb
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\InsuranceProject.genruntimeconfig.cache
+C:\Users\sanket.pal\Downloads\InsuranceProject\InsuranceProject\InsuranceProject\obj\Debug\net6.0\ref\InsuranceProject.dll
