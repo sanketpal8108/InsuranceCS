@@ -29,12 +29,12 @@ namespace InsuranceProject.Services
                 return false;
             return true;
         }
-        public PageList<Customer> GetAll(PageParameters pageParameters)
+        public List<Customer> GetAll()
         {
             string[] innerTables = { "CustomerList" };
             var customerQuery = _entityRepository.Get();
             var customers = customerQuery.Where(customer => customer.IsActive).ToList();
-            return PageList<Customer>.ToPagedList(customers, pageParameters.PageNumber, pageParameters.PageSize);
+            return customers;
         }
 
         public Customer Get(int id)

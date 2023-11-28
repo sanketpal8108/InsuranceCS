@@ -48,7 +48,7 @@ namespace InsuranceProject.Controllers
             }
             return Ok(ConvertToDTO(agent));
         }
-        [HttpPost,Authorize(Roles = "Admin")]
+        [HttpPost/*,Authorize(Roles = "Admin")*/]
         public IActionResult Add(AgentDto agentDto)
         {
             var agent = ConvertToModel(agentDto);

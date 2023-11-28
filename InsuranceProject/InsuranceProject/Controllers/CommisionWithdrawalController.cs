@@ -13,9 +13,12 @@ namespace InsuranceProject.Controllers
     public class CommisionWithdrawalController : ControllerBase
     {
         private  ICommisionWithdrawalService _commissionWithdrawalService;
-        public CommisionWithdrawalController(ICommisionWithdrawalService commissionWithdrawalService)
+        private ICommisionService _commissionService;
+        public CommisionWithdrawalController(ICommisionWithdrawalService commissionWithdrawalService, ICommisionService commissionService)
         {
             _commissionWithdrawalService = commissionWithdrawalService;
+            _commissionService = commissionService;
+
         }
         [HttpGet,Authorize(Roles = "Agent")]
         public IActionResult Get()
@@ -45,11 +48,28 @@ namespace InsuranceProject.Controllers
         [HttpPost]
         public IActionResult Add(CommisionWithdrawalDto commisionWithdrawalDto)
         {
-            var commisionWithdrawal = ConvertToModel(commisionWithdrawalDto);
-            var CommisionWithdrawalId = _commissionWithdrawalService.Add(commisionWithdrawal);
-            if (CommisionWithdrawalId == null)
-                throw new EntityInsertError("Some errors Occurred");
-            return Ok(CommisionWithdrawalId);
+            var commisionData = _commissionService.GetAll();
+            var amount = commisionWithdrawalDto.WithdrawalAmount;
+            if (commisionData != null)
+            {
+                foreach (var commision in commisionData)
+                {
+                    if (amount <= commision.CommisionAmount)
+                        commision.CommisionAmount = commision.CommisionAmount - amount;
+                    else
+                    {
+                        amount = amount-commision.CommisionAmount;
+                        commision.CommisionAmount = commision.CommisionAmount-commision.CommisionAmount;
+                    }
+                    _commissionService.Update(commision);
+                }
+                var commisionWithdrawal = ConvertToModel(commisionWithdrawalDto);
+                var CommisionWithdrawalId = _commissionWithdrawalService.Add(commisionWithdrawal);
+                if (CommisionWithdrawalId == null)
+                    throw new EntityInsertError("Some errors Occurred");
+                return Ok(CommisionWithdrawalId);
+            }
+            return BadRequest("No commision found");
         }
         [HttpPut]
         public IActionResult Update(CommisionWithdrawalDto commisionWithdrawalDto)
@@ -79,11 +99,13 @@ namespace InsuranceProject.Controllers
             return new CommisionWithdrawal()
             {
                 Id = CommisionwithdrawalDto.Id,
-                RequestDate = CommisionwithdrawalDto.RequestDate,
+                RequestDate = CommisionwithdrawalDto.RequestDate.ToDateTime(TimeOnly.Parse("10:00 PM")),
                 WithdrawalAmount = CommisionwithdrawalDto.WithdrawalAmount,
-                TotalWithdrawalAmount = CommisionwithdrawalDto.TotalWithdrawalAmount,
-                IsApproved = CommisionwithdrawalDto.IsApproved,
+                //TotalWithdrawalAmount = CommisionwithdrawalDto.TotalWithdrawalAmount,
+                IsApproved = false,
+                AgentId = CommisionwithdrawalDto.AgentId,
                 IsActive=true,
+                
 
             };
         }
@@ -92,9 +114,10 @@ namespace InsuranceProject.Controllers
             return new CommisionWithdrawalDto()
             {
                 Id = commisionwithdrawal.Id,
-               RequestDate= commisionwithdrawal.RequestDate,
+               RequestDate= DateOnly.FromDateTime(commisionwithdrawal.RequestDate),
                WithdrawalAmount= commisionwithdrawal.WithdrawalAmount,
-               TotalWithdrawalAmount=commisionwithdrawal.TotalWithdrawalAmount,
+               //TotalWithdrawalAmount=commisionwithdrawal.TotalWithdrawalAmount,
+               AgentId= commisionwithdrawal.AgentId,
                IsApproved= commisionwithdrawal.IsApproved,
             };
         }

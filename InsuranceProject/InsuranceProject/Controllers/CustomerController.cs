@@ -28,20 +28,20 @@ namespace InsuranceProject.Controllers
         public IActionResult Get([FromQuery] PageParameters pageParameters)
         {
             var customerDTO = new List<CustomerDto>();
-            var customers = _customerService.GetAll(pageParameters);
+            var customers = _customerService.GetAll();
 
             if (customers.Count > 0)
             {
-                var metaData = new
-                {
-                    customers.TotalCount,
-                    customers.PageSize,
-                    customers.CurrentPage,
-                    customers.TotalPages,
-                    customers.HasNext,
-                    customers.HasPrevious,
-                };
-                Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metaData));
+                //var metaData = new
+                //{
+                //    customers.TotalCount,
+                //    customers.PageSize,
+                //    customers.CurrentPage,
+                //    customers.TotalPages,
+                //    customers.HasNext,
+                //    customers.HasPrevious,
+                //};
+                //Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metaData));
                 foreach (var customer in customers)
                 {
                     customerDTO.Add(ConvertToDTO(customer));
@@ -147,7 +147,7 @@ namespace InsuranceProject.Controllers
                 Id = customerDto.Id,
                 FirstName = customerDto.FirstName,
                 LastName = customerDto.LastName,
-                DateOfBirth = customerDto.DateOfBirth,
+                DateOfBirth = customerDto.DateOfBirth.ToDateTime(TimeOnly.Parse("10:00 PM")),
                 UserName = customerDto.UserName,
                 Password = customerDto.Password,
                 MobileNumber = customerDto.MobileNumber,
@@ -169,7 +169,7 @@ namespace InsuranceProject.Controllers
                Id= customer.Id,
                FirstName = customer.FirstName,
                LastName = customer.LastName,
-               DateOfBirth = customer.DateOfBirth,
+               DateOfBirth = DateOnly.FromDateTime(customer.DateOfBirth),
                UserName = customer.UserName,
                Password = customer.Password,
                MobileNumber = customer.MobileNumber,

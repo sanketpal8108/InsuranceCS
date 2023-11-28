@@ -83,7 +83,7 @@ namespace InsuranceProject.Controllers
                 CustomerId=policyClaimDto.CustomerId,
                 BankName=policyClaimDto.BankName,
                 WithdrawalAmount=policyClaimDto.WithdrawalAmount,
-                WithdrawalDate=policyClaimDto.WithdrawalDate,
+                WithdrawalDate=policyClaimDto.WithdrawalDate.ToDateTime(TimeOnly.Parse("10:00 PM")),
                 
                 IsActive = true
 
@@ -98,7 +98,7 @@ namespace InsuranceProject.Controllers
                 CustomerId = policyClaim.CustomerId,
                 BankName = policyClaim.BankName,
                 WithdrawalAmount = policyClaim.WithdrawalAmount,
-                WithdrawalDate = policyClaim.WithdrawalDate,
+                WithdrawalDate = DateOnly.FromDateTime(policyClaim.WithdrawalDate),
 
             };
         }

@@ -18,7 +18,7 @@ namespace InsuranceProject.Controllers
         {
             _queryService = queryService;
         }
-        [HttpGet,Authorize(Roles ="Admin")]
+        [HttpGet,Authorize(Roles ="Admin , Customer")]
         public IActionResult Get()
         {
             var queryDTO = new List<QueryDto>();
@@ -81,7 +81,7 @@ namespace InsuranceProject.Controllers
             {
                 Id = queryDto.Id,
                 QueryTitle = queryDto.QueryTitle,
-                QueryDate = queryDto.QueryDate,
+                QueryDate = queryDto.QueryDate.ToDateTime(TimeOnly.Parse("10:00 PM")),
                 QueryMessage = queryDto.QueryMessage,
                 Reply=queryDto.Reply,
                 CustomerId = queryDto.CustomerId,
@@ -94,7 +94,7 @@ namespace InsuranceProject.Controllers
             {
                 Id = query.Id,
                 QueryTitle = query.QueryTitle,
-                QueryDate = query.QueryDate,
+                QueryDate = DateOnly.FromDateTime(query.QueryDate),
                 QueryMessage = query.QueryMessage,
                 Reply = query.Reply,
                 CustomerId = query.CustomerId,  

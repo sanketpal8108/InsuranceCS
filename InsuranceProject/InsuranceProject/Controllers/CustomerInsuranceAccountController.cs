@@ -12,6 +12,7 @@ namespace InsuranceProject.Controllers
     public class CustomerInsuranceAccountController : ControllerBase
     {
         private ICustomerInsuranceAccountService _customerInsuranceAccountService;
+        
         public CustomerInsuranceAccountController(ICustomerInsuranceAccountService customerInuranceAccountService)
         {
             _customerInsuranceAccountService = customerInuranceAccountService;
@@ -40,6 +41,21 @@ namespace InsuranceProject.Controllers
                 throw new EntityNotFoundError("CustomerInsuranceAccount not found");
             }
             return Ok(ConvertToDTO(customerInsuranceAccount));
+        }
+        [HttpGet("ByCustomerId/{customerId:int}")]
+        public IActionResult GetByCustomerId(int customerId)
+        {
+            var customerInsuranceAccountDTO = new List<CustomerInsuranceAccountDto>();
+            var customerInsuranceAccounts = _customerInsuranceAccountService.GetByCustomerId(customerId);
+            if (customerInsuranceAccounts.Count > 0)
+            {
+                foreach (var customerInsuranceAccount in customerInsuranceAccounts)
+                {
+                    customerInsuranceAccountDTO.Add(ConvertToDTO(customerInsuranceAccount));
+                }
+                return Ok(customerInsuranceAccountDTO);
+            }
+            throw new EntityNotFoundError("CustomerInsuranceAccount not found");
         }
         [HttpPost]
         public IActionResult Add(CustomerInsuranceAccountDto customerInsuranceAccountDto)
@@ -81,8 +97,8 @@ namespace InsuranceProject.Controllers
                 CustomerId = customerInsuranceAccountDto.CustomerId,
                 InsurancePlanId = customerInsuranceAccountDto.InsurancePlanId,
                 PolicyTerm = customerInsuranceAccountDto.PolicyTerm,
-                InsuranceCreationDate = customerInsuranceAccountDto.InsuranceCreationDate,
-                MaturityDate = customerInsuranceAccountDto.MaturityDate,
+                InsuranceCreationDate = customerInsuranceAccountDto.InsuranceCreationDate.ToDateTime(TimeOnly.Parse("10:00 PM")),
+                MaturityDate = customerInsuranceAccountDto.MaturityDate.ToDateTime(TimeOnly.Parse("10:00 PM")),
                 SumAssured = customerInsuranceAccountDto.SumAssured,
                 ProfitRatio = customerInsuranceAccountDto.ProfitRatio,
                 TotalPremium = customerInsuranceAccountDto.TotalPremium,
@@ -96,8 +112,8 @@ namespace InsuranceProject.Controllers
             return new CustomerInsuranceAccountDto()
             {
                 Id = customerInsuranceAccount.Id,
-                InsuranceCreationDate = customerInsuranceAccount.InsuranceCreationDate,
-                MaturityDate = customerInsuranceAccount.MaturityDate,
+                InsuranceCreationDate = DateOnly.FromDateTime(customerInsuranceAccount.InsuranceCreationDate),
+                MaturityDate = DateOnly.FromDateTime(customerInsuranceAccount.MaturityDate),
                 InsurancePlanId = customerInsuranceAccount.InsurancePlanId,
                 PolicyTerm = customerInsuranceAccount.PolicyTerm,
                 TotalPremium = customerInsuranceAccount.TotalPremium,

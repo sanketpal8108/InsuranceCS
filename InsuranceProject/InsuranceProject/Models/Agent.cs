@@ -17,6 +17,7 @@ namespace InsuranceDay1.Models
         public bool IsActive { get; set; } 
         public List<Commision>? Commisions { get; set; }
         public double TotalCommision { get; set; } 
+        public List<CommisionWithdrawal> commisionWithdrawals { get; set; }
 
         public List<Customer>? Customers { get; set; }
 

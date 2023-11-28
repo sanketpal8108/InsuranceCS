@@ -18,6 +18,12 @@ namespace InsuranceProject.Services
             var customers = customerQuery.Where(customer => customer.IsActive).ToList();
             return customers;
         }
+        public List<CustomerInsuranceAccount> GetByCustomerId(int customerId)
+        {
+            var customerQuery = _entityRepository.Get();
+            var customers = customerQuery.Where(customer => customer.CustomerId == customerId).ToList();
+            return customers;
+        }
 
         public CustomerInsuranceAccount Get(int id)
         {

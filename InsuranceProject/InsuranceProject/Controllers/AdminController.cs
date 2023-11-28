@@ -1,6 +1,7 @@
 ﻿using InsuranceDay1.Models;
 using InsuranceProject.DTO;
 using InsuranceProject.Exceptions;
+using InsuranceProject.Service;
 using InsuranceProject.Services;
 using InsuranceProject.Token_Creation;
 using LoginAuthDemo.Dto;
@@ -16,12 +17,38 @@ namespace InsuranceProject.Controllers
     {
         private IAdminService _adminService;
         private IConfiguration _configuration;
+
+        //forCount
+        private IAgentService _agentService;
+        private IEmployeeService _employeeService;
+        private ICustomerService _customerService;
+        private IInsuranceTypeService _insuranceTypeService;
+        private IInsuranceSchemeService _insuranceSchemeService;
+        private ILocationService _locationService;
         public AdminController(IAdminService adminService, IConfiguration configuration)
         {
             _adminService = adminService;
             _configuration = configuration;
 
         }
+        //[HttpGet("GetCount")]
+        //public IActionResult GetCount()
+        //{
+        //    //var countData = new CountData(_agentService, _employeeService, _customerService, _insuranceTypeService,
+        //    //    _locationService, _insuranceSchemeService);
+        //    Dictionary<string, int> count = new Dictionary<string, int>()
+        //    {
+        //        { "agentCount",_agentService.GetAll().Count()},
+        //        {"employeeCount" ,_employeeService.GetAll().Count()},
+        //        {"customerCount" , _customerService.GetAll().Count()},
+        //        {"insuranceTypeCount",_insuranceTypeService.GetAll().Count() },
+        //        {"insuranceSchemeCount",_insuranceSchemeService.GetAll().Count() },
+        //        {"locationCount",_locationService.GetAll().Count() },
+
+        //    };
+        //    return Ok(count);
+
+        //}
         [HttpGet]
         public IActionResult Get()
         {

@@ -5,7 +5,7 @@ namespace InsuranceProject.Services
 {
     public interface ICustomerService
     {
-        public PageList<Customer> GetAll(PageParameters pageParameters);
+        public List<Customer> GetAll();
         public Customer Get(int id);
         public bool isUniqueness(string username);
         public Customer Check(int id);

@@ -6,6 +6,7 @@ namespace InsuranceProject.Services
     {
         public List<CustomerInsuranceAccount> GetAll();
         public CustomerInsuranceAccount Get(int id);
+        public List<CustomerInsuranceAccount> GetByCustomerId(int customerId);
         public CustomerInsuranceAccount Check(int id);
         public int Add(CustomerInsuranceAccount customer);
         public CustomerInsuranceAccount Update(CustomerInsuranceAccount customer);
