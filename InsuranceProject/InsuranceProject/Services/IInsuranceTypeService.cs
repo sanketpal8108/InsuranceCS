@@ -10,5 +10,7 @@ namespace InsuranceProject.Service
         public InsuranceType Check(int id);
         public InsuranceType Update(InsuranceType insuranceType);
         public void Delete(InsuranceType insuranceType);
+        public InsuranceType FindType(string username);
+        public bool IsUniqueness(string username);
     }
 }

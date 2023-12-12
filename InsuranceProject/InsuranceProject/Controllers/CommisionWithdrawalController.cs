@@ -20,7 +20,7 @@ namespace InsuranceProject.Controllers
             _commissionService = commissionService;
 
         }
-        [HttpGet,Authorize(Roles = "Agent")]
+        [HttpGet,Authorize(Roles = "Agent , Admin , Employee")]
         public IActionResult Get()
         {
             var commisionWithdrawalDto = new List<CommisionWithdrawalDto>();
@@ -102,7 +102,7 @@ namespace InsuranceProject.Controllers
                 RequestDate = CommisionwithdrawalDto.RequestDate.ToDateTime(TimeOnly.Parse("10:00 PM")),
                 WithdrawalAmount = CommisionwithdrawalDto.WithdrawalAmount,
                 //TotalWithdrawalAmount = CommisionwithdrawalDto.TotalWithdrawalAmount,
-                IsApproved = false,
+                IsApproved = CommisionwithdrawalDto.IsApproved,
                 AgentId = CommisionwithdrawalDto.AgentId,
                 IsActive=true,
                 

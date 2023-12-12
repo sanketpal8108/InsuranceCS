@@ -10,7 +10,8 @@ namespace InsuranceProject.DTO
         public string BankName { get; set; }
         public double WithdrawalAmount { get; set; }
         public int CustomerId { get; set; }
+        public bool? IsApproved { get; set; }
         public int InsurancePlanId { get; set; }
-
+        public int CustomerInsuranceAccountId { get; set; }
     }
 }

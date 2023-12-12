@@ -29,7 +29,7 @@ namespace InsuranceDay1.Models
 
         public Agent? Agent { get; set; }
         [ForeignKey("Agent")]
-        public int AgentId { get; set; }
+        public int? AgentId { get; set; }
 
         public Role Role { get; set; }
         [ForeignKey("Role")]

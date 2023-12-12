@@ -26,6 +26,6 @@ namespace InsuranceProject.DTO
         public string NomineeRelation { get; set; }
         [Required(ErrorMessage = "LocationId is Required.")]
         public int LocationId { get; set; }
-        public int AgentId { get; set; }//public int RoleId { get; set; }
+        public int? AgentId { get; set; }//public int RoleId { get; set; }
     }
 }

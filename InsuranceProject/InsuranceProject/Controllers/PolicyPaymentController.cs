@@ -86,6 +86,8 @@ namespace InsuranceProject.Controllers
                 TaxAmount = policypaymentDto.TaxAmount,
                 TotalAmount = policypaymentDto.TotalAmount,
                 TransactionType = policypaymentDto.TransactionType,
+                CustomerInsuranceAccountId = policypaymentDto.CustomerInsuranceAccountId,
+                IsPaid = policypaymentDto.IsPaid,
                 IsActive = true
 
             };
@@ -102,6 +104,8 @@ namespace InsuranceProject.Controllers
                 TaxAmount=policyPayment.TaxAmount,
                 TotalAmount=policyPayment.TotalAmount,
                 TransactionType=policyPayment.TransactionType,  
+                CustomerInsuranceAccountId=policyPayment.CustomerInsuranceAccountId,
+                IsPaid=policyPayment.IsPaid,
             };
         }
     }

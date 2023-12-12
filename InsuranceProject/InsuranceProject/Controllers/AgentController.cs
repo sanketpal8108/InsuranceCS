@@ -23,7 +23,7 @@ namespace InsuranceProject.Controllers
             _configuration = configuration;
 
         }
-        [HttpGet,Authorize(Roles ="Admin")]
+        [HttpGet,Authorize(Roles ="Admin , Agent , Employee")]
         public IActionResult Get()
         {
             var agentDTO = new List<AgentDto>();

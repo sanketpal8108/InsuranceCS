@@ -75,29 +75,68 @@ namespace InsuranceProject.Controllers
             }
             throw new EntityNotFoundError("No Documents found to delete");
         }
+        [HttpPost("upload")]
+        public IActionResult Upload([FromForm] DocumentsDto documentDto)
+        {
+
+            if (documentDto.File == null || documentDto.File.Length == 0)
+            {
+                return BadRequest("File is not selected or empty");
+            }
+
+            var documentModel = new Documents
+            {
+                DocumentType = documentDto.DocumentType,
+                DocumentName = documentDto.DocumentName,
+                CustomerId = documentDto.CustomerId,
+                IsApproved=false,
+                IsActive=true,
+                //Status = "Pending"
+
+                //  DocumentName = documentDto.File.FileName // save the file name
+                // set other properties
+            };
+
+            using (var memoryStream = new MemoryStream())
+            {
+                documentDto.File.CopyTo(memoryStream);
+                documentModel.File = memoryStream.ToArray(); // save the file content
+            }
+
+            int id = _documentService.Add(documentModel);
+            if (id != 0)
+            {
+                return Ok(id);
+            }
+            throw new EntityInsertError("Some issue while adding the document");
+        }
         private Documents ConvertToModel(DocumentsDto documentDto)
         {
             return new Documents()
             {
                 Id = documentDto.Id,
                 DocumentType = documentDto.DocumentType,
-                //DocumentInformation = documentDto.DocumentInformation,
-                DocumentData = documentDto.DocumentData,
-                CustomerId = documentDto.CustomerId,
-                IsActive = true
 
+                //DocumentInformation = documentDto.DocumentInformation,
+                DocumentName = documentDto.DocumentName,
+                CustomerId = documentDto.CustomerId,
+                //CustomerId= documentDto.CustomerId,
+                IsActive = true,
+                File=documentDto.ViewDocument,
+                IsApproved=documentDto.IsApproved
             };
         }
         private DocumentsDto ConvertToDTO(Documents document)
         {
             return new DocumentsDto()
             {
-                Id= document.Id,
+                Id = document.Id,
                 DocumentType = document.DocumentType,
-                DocumentData= document.DocumentData,
+                DocumentName = document.DocumentName,
+                ViewDocument=document.File,
                 //DocumentInformation = document.DocumentInformation,
                 CustomerId = document.CustomerId,
-
+                IsApproved=document.IsApproved
             };
         }
     }

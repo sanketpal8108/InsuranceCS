@@ -181,7 +181,7 @@ namespace InsuranceProject.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AgentId")
+                    b.Property<int?>("AgentId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("DateOfBirth")
@@ -293,15 +293,22 @@ namespace InsuranceProject.Migrations
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
-                    b.Property<byte[]>("DocumentData")
+                    b.Property<string>("DocumentName")
                         .IsRequired()
-                        .HasColumnType("varbinary(max)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DocumentType")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<byte[]>("File")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
                     b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsApproved")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
@@ -493,10 +500,16 @@ namespace InsuranceProject.Migrations
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
+                    b.Property<int>("CustomerInsuranceAccountId")
+                        .HasColumnType("int");
+
                     b.Property<int>("InsurancePlanId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsApproved")
                         .HasColumnType("bit");
 
                     b.Property<double>("WithdrawalAmount")
@@ -508,6 +521,9 @@ namespace InsuranceProject.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId");
+
+                    b.HasIndex("CustomerInsuranceAccountId")
+                        .IsUnique();
 
                     b.HasIndex("InsurancePlanId");
 
@@ -525,10 +541,16 @@ namespace InsuranceProject.Migrations
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
+                    b.Property<int>("CustomerInsuranceAccountId")
+                        .HasColumnType("int");
+
                     b.Property<int>("InsurancePlanId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsPaid")
                         .HasColumnType("bit");
 
                     b.Property<double>("PaidAmount")
@@ -550,6 +572,8 @@ namespace InsuranceProject.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId");
+
+                    b.HasIndex("CustomerInsuranceAccountId");
 
                     b.HasIndex("InsurancePlanId");
 
@@ -673,9 +697,7 @@ namespace InsuranceProject.Migrations
                 {
                     b.HasOne("InsuranceDay1.Models.Agent", "Agent")
                         .WithMany("Customers")
-                        .HasForeignKey("AgentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AgentId");
 
                     b.HasOne("InsuranceDay1.Models.Location", "Location")
                         .WithMany("Customers")
@@ -767,6 +789,12 @@ namespace InsuranceProject.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("InsuranceDay1.Models.CustomerInsuranceAccount", "CustomerInsuranceAccount")
+                        .WithOne("PolicyClaim")
+                        .HasForeignKey("InsuranceDay1.Models.PolicyClaim", "CustomerInsuranceAccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("InsuranceDay1.Models.InsurancePlan", "InsurancePlan")
                         .WithMany("PolicyClaims")
                         .HasForeignKey("InsurancePlanId")
@@ -774,6 +802,8 @@ namespace InsuranceProject.Migrations
                         .IsRequired();
 
                     b.Navigation("Customer");
+
+                    b.Navigation("CustomerInsuranceAccount");
 
                     b.Navigation("InsurancePlan");
                 });
@@ -786,6 +816,12 @@ namespace InsuranceProject.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("InsuranceDay1.Models.CustomerInsuranceAccount", "CustomerInsuranceAccount")
+                        .WithMany("PolicyPayment")
+                        .HasForeignKey("CustomerInsuranceAccountId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("InsuranceDay1.Models.InsurancePlan", "InsurancePlan")
                         .WithMany("PolicyPayments")
                         .HasForeignKey("InsurancePlanId")
@@ -793,6 +829,8 @@ namespace InsuranceProject.Migrations
                         .IsRequired();
 
                     b.Navigation("Customer");
+
+                    b.Navigation("CustomerInsuranceAccount");
 
                     b.Navigation("InsurancePlan");
                 });
@@ -828,6 +866,13 @@ namespace InsuranceProject.Migrations
                     b.Navigation("PolicyPayments");
 
                     b.Navigation("Queries");
+                });
+
+            modelBuilder.Entity("InsuranceDay1.Models.CustomerInsuranceAccount", b =>
+                {
+                    b.Navigation("PolicyClaim");
+
+                    b.Navigation("PolicyPayment");
                 });
 
             modelBuilder.Entity("InsuranceDay1.Models.InsurancePlan", b =>

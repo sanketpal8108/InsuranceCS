@@ -1,5 +1,6 @@
 ﻿
 using InsuranceDay1.Models;
+using InsuranceProject.Data;
 using InsuranceProject.Repository;
 
 namespace InsuranceProject.Service
@@ -10,9 +11,14 @@ namespace InsuranceProject.Service
         private IEntityRepository<InsuranceScheme> _entityRepository;
         private IEntityRepository<InsurancePlan> _insurancePlanRepository;
         private IInsurancePlanService _insurancePlanService;
-        public InsuranceSchemeService(IEntityRepository<InsuranceScheme> entityRepository)
+        private MyContext _context;
+        public InsuranceSchemeService(IEntityRepository<InsuranceScheme> entityRepository, IEntityRepository<InsurancePlan> insurancePlanRepository,
+            MyContext context, IInsurancePlanService insurancePlanService)
         {
             _entityRepository = entityRepository;
+            _insurancePlanRepository = insurancePlanRepository;
+            _insurancePlanService = insurancePlanService;
+            _context = context;
         }
         public List<InsuranceScheme> GetAll()
         {
@@ -44,6 +50,17 @@ namespace InsuranceProject.Service
                 _insurancePlanService.Delete(item);
             }
             _entityRepository.Delete(insuranceScheme);
+        }
+        public InsuranceScheme FindScheme(string username)
+        {
+            return _context.InsuranceSchemes.Where(user => user.InsuranceSchemeName == username).FirstOrDefault();
+        }
+        public bool IsUniqueness(string username)
+        {
+            var usernameExist = FindScheme(username);
+            if (usernameExist?.InsuranceSchemeName == username)
+                return false;
+            return true;
         }
     }
 }

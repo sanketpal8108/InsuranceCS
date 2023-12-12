@@ -1,4 +1,5 @@
 ﻿using InsuranceDay1.Models;
+using InsuranceProject.Data;
 using InsuranceProject.Repository;
 
 namespace InsuranceProject.Services
@@ -6,10 +7,11 @@ namespace InsuranceProject.Services
     public class CustomerInsuranceAccountService:ICustomerInsuranceAccountService
     {
         private IEntityRepository<CustomerInsuranceAccount> _entityRepository;
-
-        public CustomerInsuranceAccountService(IEntityRepository<CustomerInsuranceAccount> entityRepository)
+        private MyContext _context;
+        public CustomerInsuranceAccountService(IEntityRepository<CustomerInsuranceAccount> entityRepository, MyContext context)
         {
             _entityRepository = entityRepository;
+            _context = context;
         }
 
         public List<CustomerInsuranceAccount> GetAll()
@@ -50,6 +52,10 @@ namespace InsuranceProject.Services
         public void Delete(CustomerInsuranceAccount customer)
         {
             _entityRepository.Delete(customer);
+        }
+        public CustomerInsuranceAccount FindByPlanId(int planId)
+        {
+            return _context.CustomerInsuranceAccounts.Where(user => user.InsurancePlanId == planId).OrderBy(user => user.Id).LastOrDefault();
         }
     }
 }

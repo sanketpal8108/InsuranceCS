@@ -32,6 +32,20 @@ namespace InsuranceProject.Controllers
             }
             throw new EntityNotFoundError("InsuranceScheme not found");
         }
+        [HttpGet("Unique/{Name}")]
+        public IActionResult isUnique(string Name)
+        {
+            bool isunique = _insuranceSchemeService.IsUniqueness(Name);
+            return Ok(isunique);
+        }
+        [HttpGet("FindType/{Name}")]
+        public IActionResult FindType(string Name)
+        {
+            var plan = _insuranceSchemeService.FindScheme(Name);
+            if (plan != null)
+                return Ok(ConvertToDTO(plan));
+            return NotFound($"Plan with planName {Name} not found");
+        }
         [HttpGet("{id:int}")]
         public IActionResult GetById(int id)
         {

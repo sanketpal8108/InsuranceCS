@@ -10,5 +10,7 @@ namespace InsuranceProject.Service
         public InsuranceScheme Check(int id);
         public InsuranceScheme Update(InsuranceScheme insuranceScheme);
         public void Delete(InsuranceScheme insuranceScheme);
+        public InsuranceScheme FindScheme(string username);
+        public bool IsUniqueness(string username);
     }
 }

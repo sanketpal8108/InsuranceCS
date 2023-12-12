@@ -64,7 +64,8 @@ namespace InsuranceProject.Controllers
             var customerInsuranceAccountId = _customerInsuranceAccountService.Add(customerInsuranceAccount);
             if (customerInsuranceAccountId == null)
                 throw new EntityInsertError("Some errors Occurred");
-            return Ok(customerInsuranceAccountId);
+            var newAcc = _customerInsuranceAccountService.FindByPlanId(customerInsuranceAccountDto.InsurancePlanId);
+            return Ok(newAcc.Id);
         }
         [HttpPut]
         public IActionResult Update(CustomerInsuranceAccountDto customerInsuranceAccountDto)
@@ -119,6 +120,7 @@ namespace InsuranceProject.Controllers
                 TotalPremium = customerInsuranceAccount.TotalPremium,
                 SumAssured = customerInsuranceAccount.SumAssured,
                 CustomerId = customerInsuranceAccount.CustomerId,
+                ProfitRatio=customerInsuranceAccount.ProfitRatio,
 
             };
         }

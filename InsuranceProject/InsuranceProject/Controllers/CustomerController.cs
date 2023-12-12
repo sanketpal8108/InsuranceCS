@@ -142,7 +142,7 @@ namespace InsuranceProject.Controllers
         }
         private Customer ConvertToModel(CustomerDto customerDto)
         {
-            return new Customer()
+            var c= new Customer()
             {
                 Id = customerDto.Id,
                 FirstName = customerDto.FirstName,
@@ -161,24 +161,29 @@ namespace InsuranceProject.Controllers
                 IsActive = true
 
             };
+            if (customerDto.AgentId == null)
+            {
+                c.AgentId = null;
+            }
+            return c;
         }
         private CustomerDto ConvertToDTO(Customer customer)
         {
             return new CustomerDto()
             {
-               Id= customer.Id,
-               FirstName = customer.FirstName,
-               LastName = customer.LastName,
-               DateOfBirth = DateOnly.FromDateTime(customer.DateOfBirth),
-               UserName = customer.UserName,
-               Password = customer.Password,
-               MobileNumber = customer.MobileNumber,
-               Email = customer.Email,
-               NomineeName= customer.NomineeName,
-               NomineeRelation= customer.NomineeRelation,
-               LocationId = customer.LocationId,
-               AgentId = customer.AgentId,
-               //RoleId = customer.RoleId,
+                Id = customer.Id,
+                FirstName = customer.FirstName,
+                LastName = customer.LastName,
+                DateOfBirth = DateOnly.FromDateTime(customer.DateOfBirth),
+                UserName = customer.UserName,
+                Password = customer.Password,
+                MobileNumber = customer.MobileNumber,
+                Email = customer.Email,
+                NomineeName = customer.NomineeName,
+                NomineeRelation = customer.NomineeRelation,
+                LocationId = customer.LocationId,
+                AgentId = customer.AgentId,
+                //RoleId = customer.RoleId,
 
             };
         }

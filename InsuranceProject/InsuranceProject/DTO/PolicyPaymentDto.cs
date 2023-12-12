@@ -10,6 +10,8 @@
         public string TransactionType { get; set; }
         public int CustomerId { get; set; }
         public int InsurancePlanId { get; set; }
+        public bool? IsPaid { get; set; }
+        public int CustomerInsuranceAccountId { get; set; }
 
 
     }

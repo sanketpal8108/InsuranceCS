@@ -84,7 +84,8 @@ namespace InsuranceProject.Controllers
                 BankName=policyClaimDto.BankName,
                 WithdrawalAmount=policyClaimDto.WithdrawalAmount,
                 WithdrawalDate=policyClaimDto.WithdrawalDate.ToDateTime(TimeOnly.Parse("10:00 PM")),
-                
+                IsApproved=policyClaimDto.IsApproved,
+                CustomerInsuranceAccountId=policyClaimDto.CustomerInsuranceAccountId,
                 IsActive = true
 
             };
@@ -99,7 +100,8 @@ namespace InsuranceProject.Controllers
                 BankName = policyClaim.BankName,
                 WithdrawalAmount = policyClaim.WithdrawalAmount,
                 WithdrawalDate = DateOnly.FromDateTime(policyClaim.WithdrawalDate),
-
+                CustomerInsuranceAccountId = policyClaim.CustomerInsuranceAccountId,
+                IsApproved= policyClaim.IsApproved
             };
         }
     }

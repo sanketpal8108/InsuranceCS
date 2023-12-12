@@ -16,10 +16,16 @@ namespace InsuranceProject.Services
         private MyContext _context;
 
 
-        public CustomerService(IEntityRepository<Customer> entityRepository, MyContext context)
+        public CustomerService(IEntityRepository<Customer> entityRepository, MyContext context,
+            IEntityRepository<CustomerInsuranceAccount> customerInsuranceAccRepository, IEntityRepository<Documents> documentsRepository,
+            ICustomerInsuranceAccountService customerInsuranceAccountService, IDocumentService documentService)
         {
             _entityRepository = entityRepository;
             _context = context;
+            _customerInsuranceAccountService = customerInsuranceAccountService;
+            _documentsRepository = documentsRepository;
+            _documentService = documentService;
+            _customerInsuranceAccRepository = customerInsuranceAccRepository;
 
         }
         public bool isUniqueness(string username)
@@ -63,13 +69,19 @@ namespace InsuranceProject.Services
         {
             var custInsuranceAcc= _customerInsuranceAccRepository.Get();
             var documents = _documentsRepository.Get();
-            foreach (var item in documents.Where(query=>query.CustomerId==customer.Id).ToList())
+            if (documents != null)
             {
-                _documentService.Delete(item);
+                foreach (var item in documents.Where(query => query.CustomerId == customer.Id).ToList())
+                {
+                    _documentService.Delete(item);
+                }
             }
-            foreach (var item in custInsuranceAcc.Where(query=>query.CustomerId==customer.Id).ToList())
+            if (custInsuranceAcc != null)
             {
-                _customerInsuranceAccountService.Delete(item);
+                foreach (var item in custInsuranceAcc.Where(query => query.CustomerId == customer.Id).ToList())
+                {
+                    _customerInsuranceAccountService.Delete(item);
+                }
             }
             _entityRepository.Delete(customer);
         }

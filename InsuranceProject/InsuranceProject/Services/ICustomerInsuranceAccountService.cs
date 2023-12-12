@@ -11,5 +11,6 @@ namespace InsuranceProject.Services
         public int Add(CustomerInsuranceAccount customer);
         public CustomerInsuranceAccount Update(CustomerInsuranceAccount customer);
         public void Delete(CustomerInsuranceAccount customer);
+        public CustomerInsuranceAccount FindByPlanId(int planId);
     }
 }

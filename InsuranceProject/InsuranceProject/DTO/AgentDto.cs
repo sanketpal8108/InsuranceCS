@@ -17,7 +17,7 @@ namespace InsuranceProject.DTO
         [StringLength(50, ErrorMessage = "UserName must be no more than 50 characters.")]
         public string UserName { get; set; }
         [Required(ErrorMessage = "Password is Required.")]
-        [StringLength(15, ErrorMessage = "Password must be no more than 15 characters.")]
+        //[StringLength(15, ErrorMessage = "Password must be no more than 15 characters.")]
         public string Password { get; set; }
         [Required(ErrorMessage = "MobileNumber is Required.")]
         //[StringLength(10, ErrorMessage = "MobileNumber must be no more than 10 characters.")]
